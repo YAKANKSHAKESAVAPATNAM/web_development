@@ -1,0 +1,221 @@
+
+ body {
+  display: flex;;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(82, 82, 190),white);
+  animation-name: background-animation;
+  animation-duration:5.8s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.sun {
+  position: absolute;
+  right:100px;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  box-shadow: 0 0 30px white;
+  border-radius: 50%;
+  top:50px;
+  right:50px;
+  border:1px solid rgb(228, 228, 223);
+ animation: suntomoon 3.8s infinite alternate; 
+
+ animation-delay:0s;
+}
+
+.tree {
+  position: absolute;
+  bottom: 100px;
+  width: 60px;
+  height: 140px;
+ 
+}
+.tree-left {
+  left: 200px;
+
+}
+ .tree-right {
+  right: 850px;
+} 
+.tree-middle{
+  right:950px;
+}
+.tree-middle1{
+  left:300px;
+}
+.tree-middle2{
+  left:400px;
+}
+.tree-middlde3{
+  right:20px;
+}
+
+.leaves {
+  width: 80px;
+  height: 80px;
+  background: rgb(23, 180, 23);
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;;
+  left: -10px;
+  box-shadow: 0px 0px 20px rgb(226, 231, 226);
+  border:2px solid rgb(35, 36, 35)
+}
+.trunk {
+  width: 20px;
+  height: 60px;
+  background: brown;
+  position: absolute;
+  bottom: 10PX;
+  left: 20px;
+  border:2px solid sienna
+}
+.road {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background:black;
+  box-shadow: inset 0 -10px 10px rgba(220, 207, 207, 0.5);
+  border:2px solid gray
+}
+
+.road-line {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 60px;
+  height: 10px;
+  background: white;
+  margin: 0 10px;
+  animation: move-line 1s linear infinite;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+.road-line {
+  left: 80px;
+}
+
+.road-line {
+  left: 160px;
+}
+.roaad-line {
+  left: 240px;
+}
+.road-line {
+  left: 320px;
+}
+.road-line {
+  left: 400px;
+}
+.road-line {
+  left: 480px;
+}
+.road-line {
+  left: 560px;
+}
+.road-line {
+  left: 640px;
+}
+.car {
+  position: absolute;
+  bottom: 70px;
+  right: 0px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(181, 151, 151, 0.5);
+  animation: move-car 6s linear infinite;
+}
+.car-1{
+  position: absolute;
+  bottom: 120px;
+  right: 0px;
+  transform: translateX(-50%);
+  animation: move-car 6s linear infinite;
+
+}
+
+.car-body {
+  width: 100px;
+  height: 50px;
+  background: red;
+  border-radius: 5px;
+  border: 5px solid rgb(8, 7, 7);
+  background-color: linear-gradient(to right, red, orange);
+
+}
+.car-body1{
+  width: 75px;
+  height: 30px;
+  right:20px;
+  background: red;
+  border-radius: 10px;
+  border: 5px solid rgb(11, 11, 11);
+  position: relative;
+ 
+}
+.wheel {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+}
+.front-wheel {
+  left: 10px;
+  border-radius: 50%;
+}
+.back-wheel {
+  right: 10px;
+  border-radius: 50%;
+  
+}
+/* @keyframes move-line {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+} */
+@keyframes move-car {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes move-car1 {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes background-animation {
+  0% {
+      background: linear-gradient(to bottom, rgb(30, 30, 143),white);
+  }
+  100% {
+    background: linear-gradient(to bottom, black,gray);
+  }
+}
+@keyframes suntomoon{
+  0%{
+    top: 0px;
+    background:yellow;
+    box-shadow: 0 0 30px rgba(255,255,0,0.7);
+    transform: translatex(0px);
+  }
+  100%{
+    top:300px;
+    background: #f0f0f0;
+    box-shadow: 0 0  20px rgba(255,255,255,0.4);
+    transform: translatex(20px);
+  }
+}

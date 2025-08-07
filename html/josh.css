@@ -1,0 +1,131 @@
+body{
+    width:100%;
+    height:10svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding:0px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+    width:1440px;
+    height:152px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position:relative;
+    padding-top:38px;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-bottom: 38px;
+    background-color: rgb(255, 255, 250);
+}
+.header{
+    width:158px;
+    height:76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    width:158px;
+    height:76px;
+}
+.navbar{
+    width:700px;
+    height:37px;
+    gap:45px;
+    border:2px solid rgb(227, 219, 219);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.home{
+    width:40px;
+    height:17px;
+    font-weight:700;
+    font-style:medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+    padding-top: 10px;
+}
+.home:hover{
+    background-color: yellow;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-right: 70px;;
+}
+.skills{
+    width:35px;
+    height:17px;
+    font-weight: 700;
+    font-style:medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+    padding-top: 10px;
+
+}
+.education{
+    width:67px;
+    height:17px;
+    font-weight: 700;
+    font-style:medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+    padding-top: 10px;
+
+}
+.projects{
+    width:55px;
+    height:17px;
+    font-weight: 700;
+    font-style:medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+    padding-top: 10px;
+
+}
+.recommendations{
+    width:120px;
+    height:17px;
+    font-weight: 700;
+    font-style:medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+    padding-top: 10px;
+    
+}
+.contact{
+    width:125px;
+    height:17px;
+    font-weight: 700;
+    font-style:medium;
+    font-size: 20px;
+  
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+    padding-top: 10px;
+    padding-right:90px;
+    
+}
+
+
+

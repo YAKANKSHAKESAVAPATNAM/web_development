@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Ideas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f6ff;
+      margin: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .ideas-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .idea-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      width: 350px;
+      position: relative;
+      border: 1px solid #e3e3f3;
+    }
+
+    .idea-card h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .idea-card .meta {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .idea-card .description {
+      margin: 15px 0;
+      color: #555;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      background-color: #e6d8ff;
+      color: #5e3ea1;
+      padding: 4px 10px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+    }
+
+    .btn {
+      background: #f4f3ff;
+      border: none;
+      border-radius: 8px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    .level-badge {
+      background-color: #ffe6e6;
+      color: #cc0000;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 12px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>⭐ Featured Ideas</h2>
+
+  <div class="ideas-grid">
+    <div class="idea-card">
+      <div class="level-badge">Advanced</div>
+      <h3>AI-Powered Study Planner</h3>
+      <div class="meta">👤 Sarah Chen • Computer Science</div>
+      <div class="description">An intelligent app that creates personalized study schedules based on your learning style, exam dates, and course difficulty.</div>
+      <div class="tags">
+        <div class="tag">AI</div>
+        <div class="tag">Education</div>
+        <div class="tag">Machine Learning</div>
+      </div>
+      <div class="stats">❤️ 45 | 💬 12 | 📅 15/1/2024</div>
+      <div class="actions">
+        <button class="btn">♡</button>
+        <button class="btn">🔗</button>
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <div class="level-badge">Advanced</div>
+      <h3>AR Campus Navigation</h3>
+      <div class="meta">👤 Emma Wilson • Computer Science</div>
+      <div class="description">Augmented reality app to help new students navigate campus buildings and find classrooms, labs, and facilities.</div>
+      <div class="tags">
+        <div class="tag">AR</div>
+        <div class="tag">Navigation</div>
+        <div class="tag">Mobile App</div>
+      </div>
+      <div class="stats">❤️ 67 | 💬 19 | 📅 13/1/2024</div>
+      <div class="actions">
+        <button class="btn">♡</button>
+        <button class="btn">🔗</button>
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <div class="level-badge">Advanced</div>
+      <h3>Mental Health Support Bot</h3>
+      <div class="meta">👤 David Kim • Psychology</div>
+      <div class="description">A conversational AI that provides 24/7 mental health support and resources for students.</div>
+      <div class="tags">
+        <div class="tag">AI</div>
+        <div class="tag">Mental Health</div>
+        <div class="tag">Chatbot</div>
+      </div>
+      <div class="stats">❤️ 89 | 💬 24 | 📅 12/1/2024</div>
+      <div class="actions">
+        <button class="btn">♡</button>
+        <button class="btn">🔗</button>
+      </div>
+    </div>
+  </div>
+   <div class="search-filter-bar">
+    <input type="text" id="searchInput" placeholder="Search ideas, tags, or authors...">
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="ai">AI</option>
+      <option value="ar">AR</option>
+      <option value="mental">Mental Health</option>
+      <option value="navigation">Navigation</option>
+    </select>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* .h1{
+     border-top:1px;
+    border-top-style: solid;
+    border-top-color: #31eb4a;
+
+    border-bottom:2px;
+    border-bottom-style: groove;
+    border-bottom-color: #3716ae;
+
+    border-right:3px;
+    border-right-style: dotted;
+    border-right-color: #82a14c;
+
+    border-left:50px;
+    border-left-style: groove;
+    border-left-color: #a1a1a1; 
+
+     border:1px solid red;
+    border-radius: 50%;
+    padding: 100px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif; 
+
+} 
+.box{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+   
+     padding: 3px;
+    color:aquamarine;
+     border:3px solid red; 
+    
+}  */
+ /* .parent{ */
+    /* width:500px;
+    height:500px;
+    border:5px red solid;
+    border-bottom-style: dashed;
+    border-bottom-color: #940a54;
+    border-bottom-width: 5px;
+    border-top-style:groove ;
+    border-top-color: #0ed628;
+    border-top-width: 5px;
+    border-left-style: solid;
+    border-left-color: #3716ae;
+    border-left-width: 5px;
+    
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+   
+    color: #4408b2; */
+    /* width: 500px;
+    height: 500px;
+    font-size: 50px;
+    
+    border: 2px solid red;
+    background-color: rgb(224, 88, 99);
+    background-image: url(../bird.jpg);
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position:center ;
+    background-position: top right;
+    filter: blur(5px);
+   
+   
+    
+ } */
+ /* .child{ */
+     /* width:calc(100%-50%);  */
+     /* width:100% 
+     height:50% */
+    /* height:calc(100% - 50%); */
+    /* width:calc(100% - 50%);
+    height:calc(100% - 50%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius:50% ;
+    border-top-right-radius:50%;
+    border: 1px solid green;
+    border:2px dashed rgb(40, 7, 73);
+    
+ }  */
+   /* .child{
+       width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    background-color: rgb(35, 186, 153);
+    background-image: url(../bird.jpg);
+    background-repeat: repeat-x;
+    
+   } */
+   /* .parrot{
+       width: 700px;
+    height: 700px;
+    border: 2px solid red;
+    background-color: rgb(114, 202, 202);
+    background-image: url(../bird.jpg);
+    
+    background-repeat: repeat;
+    background-position:top left; */
+    /* background-position: top center;
+    background-position: top right;
+    background-position: center left;
+    background-position: center center;
+    background-position: center right; */
+    /* background-position: bottom left;
+    background-position: bottom center; */
+    /* background-position: bottom right; */
+    
+   /* }
+   .parrot1{
+       width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    background-color: rgb(174, 30, 97);
+    background-image: url(../bird.jpg);
+    background-repeat:repeat-y;    
+   } */
+   /* .thub{
+    width:200px;
+    height200px;
+    border: 5px solid red;
+    margin: 50px;
+    padding: 10px; */
+       /* border-radius: 50%; */
+    /* padding: 50px;
+    background-color: rgb(224, 88, 99); */
+    /* padding-top: 50px;
+    padding:10px 30px 50px 70px;
+    background-color: rgb(224, 88, 99); */
+ 
+/*     
+   }
+   .thub1{
+    width: 200px;
+    height: 100px;
+    border: 5px solid red;
+    margin:50px ;
+    padding: 10px;
+   } */
+   /* .parent{
+    width:100px;
+    height: 100px;
+    border: 5px solid red;
+    margin-top: 30px;
+    background-color: blueviolet;
+    padding-top: 40px;
+    background-color: rgb(26, 161, 161);
+    margin-bottom: 50px;
+      padding: 20px 30px 40px 50px;
+      background-color: rgb(224, 88, 99);
+
+   
+   }
+   .child{
+    width: 100px;
+    height: 100px;
+    border: 5px solid red;
+   
+   
+    padding-bottom: 40px;
+    background-color: rgb(224, 88, 99);
+    margin-left: 50px;
+    
+      background-color: rgb(45, 30, 183);
+   }
+   .parrot{
+      width: 100px;
+      height: 100px;
+      border: 5px solid red;
+      margin-left: 50px;
+      padding-right: 40px;
+      background-color: rgb(224, 88, 99);
+      margin-right: 50px;
+         background-color: rgb(20, 212, 52);
+   } */
+    .parent1{
+      width: 500px;
+      height: 500px;
+      background-color: red;
+      /* position:absolute;
+      z-index: 2; */
+    }
+    .parent2{
+      width: 500px;
+      height: 500px;
+      background-color: blue;
+      margin-top: 50px;
+      border:3px solid black;
+      /* position: relative; */
+      position: sticky;
+      top: 10px;
+    }
+    .child{
+      width: 200px;
+      height: 100px;
+      background-color: yellow;
+      /* margin-top: 50px; */
+      position: relative;
+      top:-50px;
+      /* bottom:50px; */
+      left: -50px;
+      /* right: 50px; */
+    }
+    .child1{
+      width: 200px;
+      height: 100px;
+      background-color: orange;
+      /* position: relative;
+      top: 50px;
+      left: 50px; */
+      position:absolute;
+      /* top: 50px; */
+      bottom:0px;
+      right:0px;
+    }
+      .child2{
+         width: 200px;
+         height: 100px;
+         background-color: pink;
+         /* position: relative;
+         top: 50px;
+         left: 50px; */
+         position: absolute;
+         top:30px;
+         right:0px;
+      }
+      .child3{
+         width: 200px;
+         height: 100px;
+         background-color: purple;
+         /* position: relative;
+         top: 50px;
+         left: 50px; */
+         position: fixed;
+         top: 30px;
+         left: 0px;
+         z-index: 1;
+      }
+      .child4{
+         width: 200px;
+         height: 100px;
+         background-color: brown;
+         /* position: relative;
+         top: 50px;
+         left: 50px; */
+         position: sticky;
+         top: 30px;
+         
+      }
+    .parent3{
+      width: 500px;
+      height: 500px;
+      background-color: green;
+      margin-top: 50px;
+      top:150px;
+      left:150px;
+      z-index: 0;
+      
+    } 
+    .parent4{
+      width: 500px;
+      height: 500px;
+      background-color: rgb(11, 51, 3);
+      margin-top: 50px;
+      z-index: 1;
+    }

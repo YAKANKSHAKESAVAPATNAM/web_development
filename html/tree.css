@@ -1,0 +1,36 @@
+body{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 174, 200);
+    
+    background-size: cover;
+
+    position: relative;
+}
+.clouds{
+    width:20%;
+    height:20%;
+    position: absolute;
+    background-image:url(./clouds.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    
+}
+.sun{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: rgb(244, 244, 7);
+    border:5px solid rgb(255, 255, 0);
+    box-shadow: 0px 0px 20px 20px rgba(201, 208, 15, 0.5);
+    position: absolute;
+    right:100px;
+    top:100px;
+    justify-content: center;
+    align-items: center;
+}

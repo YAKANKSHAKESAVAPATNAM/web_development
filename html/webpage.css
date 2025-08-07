@@ -1,0 +1,224 @@
+
+img{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    left: 0;
+} 
+ body{
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: poppins;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 1;
+    right: 0;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 0px;
+    /* box-shadow: 0px 0px 8px 16px rgba(186, 184, 184, 0.1); */
+    position: relative;
+    gap: 10px;
+    z-index:1000;
+}
+h2{
+    font-size: 24px;
+    color: #030303;
+    padding: 0px;
+    
+}
+.icons{
+    left:900px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    color:gray
+
+    
+}
+.icons:hover{
+    cursor: pointer;
+    color: #1bead8;
+}
+.wrong{
+    position: absolute;
+    right: -1380px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.wrong:hover{
+    cursor: pointer;
+    color: #d13c3c;   
+}
+
+.searchbar{
+    top:100px;
+    left:90px;
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    width:150px;
+    height:40px;
+    background-color: rgb(238, 241, 241);
+    border:3px solid rgb(195, 187, 187);
+}
+.searchicon{
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 20px;
+    height: 20px; 
+    display: flex;
+    gap:20px;  
+}
+.textbox{
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    width: 120px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    font-size: 25px;
+    color: black;
+    background-color: rgb(238, 241, 241);
+}
+.robo1{
+    position: absolute;
+    top:150px;
+    left:300px;
+    right: 0px;
+    width: 1800px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    font-size: 120px;
+    
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    display: flex;
+}
+.sec1 .sec1-1 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    height: 90sh;
+    top: 150px;
+    width: 90%;
+    height: 84svh;
+    left:100px;
+}
+.para{
+    position: absolute;
+    top: 800px;
+    right: 450px;
+    font-size: 30px;
+    text-align: center;
+    
+    color:white;
+    display: flex;
+}
+.line{
+    position: absolute;
+    width:15px;
+    height:150px;
+    background-color: aqua;
+    top: 350px;
+    right: 1080px;
+}
+/* .sec2{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 100px;
+    top: 1400px;
+    width: 100%;
+    height: 60svh;
+    
+}
+.robo2{
+    position: absolute;
+    bottom: 150px;
+    left: 1460px;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    
+}
+.para2{
+    position:absolute;
+    bottom: 800px;
+    left:450px;
+    font-size: 30px;
+    text-align: center;
+}
+.h1{
+    position:absolute;
+    top: -0px;
+    left: 450px;
+    font-size: 50px;
+    text-align: center;
+    color:black
+}
+
+
+ */
+ .human-robot-section {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 40px;
+    
+}
+
+.text-block {
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    gap:2px;
+    height:300px;
+}
+
+.texts{
+    color:grey;
+    font-size:15px;
+    top:500px;
+}
+.robo-image img {
+    width: 400px;
+    height: 320px;
+    max-width:500px;
+}

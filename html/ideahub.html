@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaHub</title>
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="ideahub.css">
+   
+</head>
+<body class="bg-purple-50 text-gray-800">
+  <div class="max-w-6xl mx-auto py-10 px-4">
+    <header>
+        <h1 class="text-5xl font-bold text-blue-600">IdeaHub</h1>
+      <p class="text-gray-600 mt-2">🚀 Launch your ideas, 🎨 share your creativity, and 🤝 collaborate with others!</p>
+    
+     <div class="idea-box flex justify-center gap-4 mt-6">
+        <button  class="bg-white border px-4 py-2 rounded-full shadow-lg">🔍 Explore Ideas</button>
+        <button onclick="navigateTo('submit.html')" class="button-2 bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg">➕ Submit Idea</button>
+      </div>
+    </header>
+     <!-- Search & Filters -->
+     <div class="filter flex flex-col sm:flex-row justify-between items-center mb-1"><!-- filtersection -->
+      <input type="text" placeholder="Search ideas, tags, or authors..." class="search-bar w-full sm:w-2/3 px-4 py-2 border rounded mb-4 text-align:center sm:mb-0" ><!-- search bar -->
+      <select onclick="OPEN()" class="filter-options border px-3 py-2 rounded ">
+        <option>All Categories</option>
+        <option>Technology</option>
+        <option>Environment</option>
+        <option>Health</option>
+        <option>Education</option>
+        <option>Design</option>
+       
+      </select>
+    </div>
+     <!-- Featured Ideas -->
+    <!-- <h2 class="featured-ideas text-xl font-semibold mb-4">⭐ Featured Ideas</h2>
+    <div class="featured-box grid md:grid-cols-1 gap-4 mb-10"> -->
+        <!-- Card1 -->
+         <!-- <div class=" cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl" >
+        <h3 class="text-base font-semibold">💡AI-Powered Study Planner</h3>
+        <div class="mt-2 text-xs text-gray-500"><i class="fa-thin fa-user"></i>Sarah Chen • Computer Science <span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></div>
+      </br>
+        <p class="text-sm mt-1">An intelligent app that creates personalized study schedules based on your learning style...</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <div class="text-xs text-gray-500 mt-2 flex justify-between">
+          <span>📅 15/1/2024</span>
+          <span>💬 12</span>
+          <span>❤️ 45</span>
+           <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm " onclick="navigateTo('idea-details.html')">View Details</button>
+        </div>
+        
+      </div> -->
+
+      <!-- Card2 -->
+      <!-- <div class=" cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">💡 AR Campus Navigation </h3>
+        <div class="mt-2 text-xs text-gray-500">Emma Wilson • Computer Science <span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></div>
+      </br>
+        <p class="text-sm mt-1">An augmented reality app that helps new students navigate the campus...</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AR</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Navigation</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Mobile App</span>
+        </div>
+        <div class="text-xs text-gray-500 mt-2 flex justify-between">
+          <span>📅 13/5/2024</span>
+          <span>💬 19</span>
+          <span>❤️ 67</span>
+          <div>
+          <i class="fa-solid fa-eye"></i>
+          </div>
+           <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm " onclick="navigateTo('idea-details1.html')">View Details</button>
+        </div>
+        
+      </div> -->
+
+      <!-- Card3 -->
+       <!-- <div class="bg-white p-5 rounded-lg shadow hover:shadow-md cursor-pointer" onclick="navigateTo('idea-details2.html')">
+        <h3 class="text-lg font-semibold">💡 Mental Health Support Bot <span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></h3>
+        <p class="text-sm mt-1 text-gray-600">A Coversational AI that provides 24/7 mental health support and resources for students...</p>
+        <div class="mt-2 text-xs text-gray-500">Mike Johnson • Computer Science</div>
+        <div class="mt-2 flex gap-2">
+          <div class="tag">AI</div>
+          <div class="tag">Education</div>
+          <div class="tag">Machine Learning</div>
+        </div>
+        <div class="text-xs text-gray-500 mt-2 flex justify-between">
+          <span>📅 14/7/2024</span>
+          <span>💬 12</span>
+          <span>❤️ 45</span>
+        </div>
+      </div> -->
+      <!-- <div class=" cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl"onclick="navigateTo('idea-details2.html')" >
+        <h3 class="text-base font-semibold">💡 Mental Health Support Bot</h3>
+        <div class="mt-2 text-xs text-gray-500">David Kim• Psychology <span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></div>
+      </br>
+        <p class="text-sm mt-1">An intelligent app that creates personalized study schedules based on your learning style...</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Mental Health</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">ChatBot</span>
+        </div>
+        <div class="text-xs text-gray-500 mt-2 flex justify-between">
+          <span>📅 14/7/2024</span>
+          <span>💬 159</span>
+          <span>❤️ 69</span>
+           <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm " onclick="navigateTo('idea-details.html')">View Details</button>
+        </div>
+        
+      </div> -->
+      <!-- Card4 -->
+        <!-- <div class=" cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl" >
+        <h3 class="text-base font-semibold">💡Smart Waste Management System</h3>
+        <div class="mt-2 text-xs text-gray-500">Emma Wilson • Computer Science <span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></div>
+      </br>
+        <p class="text-sm mt-1">AI-driven platform for optimizing waste collection and recycling processes....</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AR</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Navigation</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Mobile App</span>
+        </div>
+        <div class="text-xs text-gray-500 mt-2 flex justify-between">
+          <span>📅 13/5/2024</span>
+          <span>💬 19</span>
+          <span>❤️ 67</span>
+           <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm " onclick="navigateTo('./idea-details3.html')">View Details</button>
+        </div>
+        </div>
+      </div> -->
+      <h2 class="featured-ideas text-xl font-semibold mb-4">⭐ Featured Ideas</h2>
+
+  <div class="ideas-grid">
+    <div class="idea-card">
+      <div class="level-badge">Advanced</div>
+      <h3  class="text-base font-semibold">💡AI-Powered Study Planner</h3>
+      <div class="meta ">👤 Sarah Chen • Computer Science</div>
+      <div class="description">An intelligent app that creates personalized study schedules based on your learning style, exam dates, and course difficulty.</div>
+      <div class="tags">
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</div>
+      </div>
+      <div class="stats">❤️ 45 | 💬 12 | 📅 15/1/2024</div>
+      <div class="actions">
+        <button class="btn">♡</button>
+        <button class="btn">🔗</button>
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <div class="level-badge">Advanced</div>
+      <h3  class="text-base font-semibold">💡AR Campus Navigation</h3>
+      <div class="meta">👤 Emma Wilson • Computer Science</div>
+      <div class="description">Augmented reality app to help new students navigate campus buildings and find classrooms, labs, and facilities.</div>
+      <div class="tags">
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AR</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Navigation</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Mobile App</div>
+      </div>
+      <div class="stats">❤️ 67 | 💬 19 | 📅 13/1/2024</div>
+      <div class="actions">
+        <button class="btn">♡</button>
+        <button class="btn">🔗</button>
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <div class="level-badge">Advanced</div>
+      <h3  class="text-base font-semibold">💡Mental Health Support Bot</h3>
+      <div class="meta">👤 David Kim • Psychology</div>
+      <div class="description">A conversational AI that provides 24/7 mental health support and resources for students.</div>
+      <div class="tags">
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Mental Health</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Chatbot</div>
+      </div>
+      <div class="stats">❤️ 89 | 💬 24 | 📅 12/1/2024</div>
+      <div class="actions">
+        <button class="btn">♡</button>
+        <button class="btn">🔗</button>
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <div class="level-badge">Advanced</div>
+      <h3  class="text-base font-semibold">💡Smart Waste Management System</h3>
+      <div class="meta">👤 Emma Wilson • Computer Science</div>
+      <div class="description">AI-driven platform for optimizing waste collection and recycling processes...</div>
+      <div class="tags">
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Waste Management</div>
+        <div class="tag bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Sustainability</div>
+      </div>
+      <div class="stats">❤️ 89 | 💬 24 | 📅 12/1/2024</div>
+      <div class="actions">
+        <button class="btn">♡</button>
+        <button class="btn">🔗</button>
+      </div>
+    </div>
+  </div>
+
+      <!--All Ideas-->
+    
+     <div class="min-h-screen bg-gray-100 py-10">
+  <div class="max-w-6xl mx-auto px-4">
+    <h1 class="text-2xl font-bold mb-6">All Ideas</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- card-1 -->
+      <div class=" cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl ">
+        <h3 class="text-base font-semibold">AI-Powered Study Planner</h3>
+
+        <p class="text-xs text-gray-600 pt-2">by Sarah Chen<span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></p>
+      </br>
+        <p class="text-sm mt-1">An intelligent app that creates personalized study schedules based on your learning style, exam dates, and course difficulty...</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      
+       <!--card-2-->
+       <div class=" cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">Campus Sustainability Tracker</h3>
+        <p class="text-xs text-gray-600 pt-2">by Mike Johnson    <span class="difficultylevel text-sm bg-yellow-100 text-yellow-600 px-2 py-1 rounded ml-2">Intermediate</span></p>
+       </br>
+        <p class="text-sm mt-1">A gamified platform to track and reduce campus carbon footprint through student challenges and green initiatives...</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      <!--card-3-->
+      <div class=" cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">AR Campus Navigation</h3>
+        <p class="text-xs text-gray-600 pt-2">by Emma Wilson<span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></p>
+      </br>
+        <p class="text-sm mt-1">Augmented reality app to help new students navigate campus buildings and find classrooms, labs, and facilities...</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      <!--card-4-->
+      <div class="cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">Mental Health Support Bot</h3>
+        <p class="text-xs text-gray-600 pt-2">by David Kim<span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></p>
+      </br>
+        <p class="text-sm mt-1">A conversational AI that provides 24/7 mental health support and resources for students...</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      <!--card-5-->
+      <div class="cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">Virtual Lab Simulator</h3>
+        <p class="text-xs text-gray-600 pt-2">by Lisa Rodriguez<span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></p>
+      </br>
+        <p class="text-sm mt-1">VR/AR platform for conducting chemistry and physics experiments in a safe virtual environment..</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      <!--card-6-->
+      <div class="cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">Smart Dorm Energy Manager</h3>
+        <p class="text-xs text-gray-600 pt-2">by Alex Thompson<span class="difficultylevel text-sm bg-yellow-100 text-yellow-600 px-2 py-1 rounded ml-2">Intermediate</span></p>
+      </br>
+        <p class="text-sm mt-1">IoT solution to optimize energy consumption in dormitories using smart sensors and automation..</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      <div class="cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">Smart Faculty Presence Tracker</h3>
+        <p class="text-xs text-gray-600 pt-2">by Yakanksha<span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2 text-align:end">Advanced</span></p>
+      </br>
+        <p class="text-sm mt-1">AI-powered tool for tracking faculty attendance and engagement in real-time.</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      <div class="cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">Smart Waste Management System</h3>
+        <p class="text-xs text-gray-600 pt-2">by Sarah Chen<span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2">Advanced</span></p>
+      </br>
+        <p class="text-sm mt-1">AI-driven platform for optimizing waste collection and recycling processes.</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+      <div class="cards bg-white p-5 rounded-lg shadow transition-transform hover:scale-105 hover:shadow-xl">
+        <h3 class="text-base font-semibold">Medical Diagnosis Assistant</h3>
+        <div class="sub-div">
+        <p class="text-xs text-gray-600 pt-2">by Albert Thompson<span class="difficultylevel text-sm bg-red-100 text-red-600 px-2 py-1 rounded ml-2 hover:bg-red-200">Advanced</span></p>
+        </div>
+      </br>
+        <p class="text-sm mt-1">AI-powered tool for assisting medical professionals in diagnosing diseases.</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">AI</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Education</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
+        </div>
+        <button class="bg-blue-600 text-white mt-4 px-3 py-1 rounded text-sm">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+     <script>
+            document.querySelector(".filter-options").style.left = "-200px"; // Initially hide the filter options
+            document.querySelector(".filter-options").style.transition = "left 0.5s linear";  //transition effect smoothly
+
+           function OPEN(){
+               document.getElementsByClassName("filter-options")[0].style.left = "10px";
+           }
+             function navigateTo(path) {
+      window.location.href = path;
+    }
+        </script>
+</body>
+</html>

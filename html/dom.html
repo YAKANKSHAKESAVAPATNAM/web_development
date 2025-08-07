@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+        <style>
+            body{
+                background-color: rgb(197, 234, 234);
+                text-align: center;
+                justify-content: center;
+
+            }
+            .demo{
+                width: 200px;
+                height: 100px;
+                background-color: rgb(18, 183, 239);
+                border: 1px solid blue;
+                margin: 10px;
+                padding: 10px; 
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- RETRIVE -->
+        <!-- <h1>Welcome to DOM Manipulation</h1>
+        <p>This is a simple example of how to manipulate the DOM using JavaScript.</p>
+        <p>This is a new paragraph added to the DOM.</p>
+        <div class="demo">DEMOTAG</div>
+        <div class="demo">DEMOTAG-1</div>
+        <div id="demo">ID</div>
+        <script>
+            console.log(document.getElementsByTagName("div")[0].innerText);
+            console.log(document.getElementsByClassName("demo"));
+            console.log(document.getElementById("demo"));
+            console.log(document.querySelectorAll("div")); 
+        </script> -->
+        <div class="demo"></div>
+        <button onclick="fun()">TOP</button>
+        <button onclick="fun1()">BOTTOM</button>
+        <button onclick="fun2()">LEFT</button>
+        <button onclick="fun3()">RIGHT</button>
+      
+        <script>
+            function fun(){
+                document.getElementsByClassName("demo")[0].style = "text-align: top; background-color: black; border: 1px solid black; position: absolute; top: 0px; left: 0; width: 200px; height: 100px; margin:10px; padding: 10px; box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);";
+            }
+            function fun1(){
+                document.getElementsByClassName("demo")[0].style = "text-align: bottom; background-color: red; border: 1px solid black; position: absolute; bottom: 0; left: 0; width: 200px; height: 100px; margin:10px; padding: 10px; box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);";
+            }
+            function fun2(){
+                document.getElementsByClassName("demo")[0].style = "text-align: left; background-color: yellow; border: 1px solid black; position: absolute; top: 0; left: -30px; width: 200px; height: 100px; margin:50px;";
+            }
+            function fun3(){
+                document.getElementsByClassName("demo")[0].style = "text-align: right; background-color: green; border: 1px solid blue; position: absolute; top: 0; right: 0; width: 200px; height: 100px; ";
+            }
+           
+        </script>
+    </body>
+</html>

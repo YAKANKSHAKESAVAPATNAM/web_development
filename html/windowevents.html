@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="actiontriggers.css">
+    <script>
+        
+            window.alert("This is a window event example.");
+           /* window.confirm("Do you want to proceed?");
+            window.prompt("Please enter your name:");
+            window.print();
+            window.close();*/
+            window.onfocus = function() {
+                alert("Window is focused");
+                console.log("Window focused");
+            };
+            window.onresize = function() {
+                console.log("Window resized");
+            };
+            window.onscroll = function() {
+                alert("Window scrolled");
+
+
+                console.log("Window scrolled");
+            };
+            window.onblur = function() {
+                alert("Window lost focus");
+               /* console.log("Window blurred");*/
+            };
+
+    </script>
+</head>
+<body>
+    <div class="parent"></div>
+    
+</body>
+</html>

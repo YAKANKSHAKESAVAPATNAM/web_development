@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Mobileoptions</title>
+        <link rel="stylesheet"href="./mobileoptions.css">
+    </head>
+    <body>
+        <span class="menu" onclick="OPEN()">&#9776;</span>
+        <div class="mobile-options">
+            <span class="close" onclick="CLOSE()">&times;</span>
+            <div>HOME</div>
+            <div>ABOUT</div>
+            <div>CONTACT</div>
+            <div>PROJECTS</div>
+            <div>REVIEWS</div>
+            <div>SERVICES</div>
+        </div>
+        <script>
+            function CLOSE(){
+                document.getElementsByClassName("mobile-options")[0].style="left: -350px";
+            }
+            function OPEN(){
+                document.getElementsByClassName("mobile-options")[0].style="left: 0px";
+            }
+        </script>
+    </body>
+</html>

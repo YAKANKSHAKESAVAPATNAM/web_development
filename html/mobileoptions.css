@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(11, 11, 11);
+}
+.mobile-options{
+    width:300px;
+    height:100svh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background-color: rgb(147, 169, 170);
+    padding: 10px;
+    transition: left 0.5 ease-out;
+}
+.mobile-options div{
+    padding:20px;
+    font-size:28px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+.mobile-options div:hover{
+    background-color: rgb(221, 242, 165);
+    box-shadow: 0 0 10px rgb(221, 242, 165);
+}
+.close{
+    width:fit-content;
+    font-size: 80px;
+    /* left:280px; */
+    top: 10px;
+    right: 10px;
+    color:rgb(224, 98, 98);
+    cursor: pointer;
+    text-align: end;
+}
+.close:hover{
+    background-color: rgb(221, 242, 165);
+    box-shadow: 0 0 10px rgb(158, 161, 148);
+}
+.menu{
+     width:fit-content;
+    font-size: 50px;
+    position: absolute;
+    left:30px;
+    color:rgb(224, 98, 98);
+    cursor: pointer;
+}
+.menu:hover{
+    background-color: rgb(192, 192, 190);
+    box-shadow: 0 0  5px 3px rgb(158, 161, 148);
+}
+

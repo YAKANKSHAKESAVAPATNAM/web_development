@@ -1,0 +1,103 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: black;
+    perspective: 1000px;
+    
+}
+@keyframes myanimation{
+    100%{
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+} 
+.cube{
+    width:150px;
+    height:150px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation:myanimation 6s infinite linear;
+   
+
+}
+/* .cube div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border:2px solid white;
+    /* background-image:linear-gradient(to right, #d64848, #8f0c3a, #a44646da); */
+    
+/* } */
+
+.left{
+    width:200px;
+    height:200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: red;
+    border:2px solid rgb(226, 220, 220);
+}
+.child{
+    border:2px solid black;
+    box-shadow: 0px 0px 2px 2px black;
+
+}
+
+.right{
+    width:200px;
+    height:200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: rgb(5, 5, 126);
+
+    
+}
+.top{
+    width:200px;
+    height:200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: rgb(2, 48, 2);
+    box-shadow:0px 0px 2px 1px greenyellow;
+}
+.bottom{
+    width:200px;
+    height:200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transform: rotateX(-90deg) translateZ(100px);
+    background-color: yellow;
+}
+.front{
+    width:200px;
+    height:200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transform: translateZ(100px);
+    background-color: white;
+}
+
+.back{
+    width:200px;
+    height:200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: purple;
+}

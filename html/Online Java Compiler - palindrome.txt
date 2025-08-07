@@ -1,0 +1,158 @@
+{}
+<https://www.programiz.com/>
+
+Online Python Compiler <https://www.programiz.com/python-programming/
+online-compiler/>
+
+Online R Compiler <https://www.programiz.com/r/online-compiler/>
+
+Online SQL Editor <https://www.programiz.com/sql/online-compiler/>
+
+Online HTML/CSS Editor <https://www.programiz.com/html/online-compiler/>
+
+Online Java Compiler <https://www.programiz.com/java-programming/online-
+compiler/>
+
+Online C Compiler <https://www.programiz.com/c-programming/online-
+compiler/>
+
+Online C++ Compiler <https://www.programiz.com/cpp-programming/online-
+compiler/>
+
+Online C# Compiler <https://www.programiz.com/csharp-programming/online-
+compiler/>
+
+Online JavaScript Compiler <https://www.programiz.com/javascript/online-
+compiler/>
+
+Online Typescript Compiler <https://www.programiz.com/typescript/online-
+compiler/>
+
+Typescript Online Compiler <https://www.programiz.com/typescript/online-
+compiler/>
+
+Scala Online Compiler <https://www.programiz.com/scala/online-compiler/>
+
+Dart Online Compiler <https://www.programiz.com/dart/online-compiler/>
+
+Ruby Online Compiler <https://www.programiz.com/ruby/online-compiler/>
+
+Online GoLang Compiler <https://www.programiz.com/golang/online-compiler/>
+
+Online PHP Compiler <https://www.programiz.com/php/online-compiler/>
+
+Online Swift Compiler <https://www.programiz.com/swift/online-compiler/>
+
+Online Rust Compiler <https://www.programiz.com/rust/online-compiler/>
+
+
+Generating Link
+
+
+    Generating Link
+
+check
+
+
+Share your code
+
+
+    Share code
+
+Copy Link Copied to clipboard
+or share using
+Learn DSA the way it should be — with step-by-step code visualization.
+Try now!
+Learn DSA with step-by-step code visualization.
+Try now!
+<https://programiz.pro/dsa-with-visualizer?utm_source=compiler-web-
+banner&utm_medium=banner&utm_campaign=code-visualizer-launch-2025>
+
+
+  Online Java Compiler <https://www.programiz.com/>
+
+Programiz PRO ❯ <https://programiz.pro/?utm_source=compiler-
+nav&utm_campaign=programiz&utm_medium=referral>
+Programiz PRO <https://programiz.pro/?utm_source=compiler-
+nav&utm_campaign=programiz&utm_medium=referral>
+Main.java
+
+Output
+
+run-icon
+<https://www.programiz.com/python-programming/online-compiler/>
+<https://www.programiz.com/r/online-compiler/> <https://
+www.programiz.com/sql/online-compiler/> <https://www.programiz.com/html/
+online-compiler/> <https://www.programiz.com/java-programming/online-
+compiler/> <https://www.programiz.com/c-programming/online-compiler/>
+<https://www.programiz.com/cpp-programming/online-compiler/> <https://
+www.programiz.com/csharp-programming/online-compiler/> <https://
+www.programiz.com/javascript/online-compiler/> <https://
+www.programiz.com/typescript/online-compiler/> <https://
+www.programiz.com/scala/online-compiler/> <https://www.programiz.com/
+dart/online-compiler/> <https://www.programiz.com/ruby/online-compiler/>
+<https://www.programiz.com/golang/online-compiler/> <https://
+www.programiz.com/php/online-compiler/> <https://www.programiz.com/
+swift/online-compiler/> <https://www.programiz.com/rust/online-compiler/>
+Main.java
+
+Share
+
+ Run 
+
+Run
+
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Main {
+    public static void main(String[] args) {
+        String s="Hello";
+       String ans="";
+        for(int i=s.length()-1;i>=0;i--){
+           ans=ans+s.charAt(i) ;
+            
+        }
+        if(ans.equals(s)){
+            System.out.println("it is a palindrome");
+        }
+        else{
+            System.out.println("not a palindrome");
+        }
+    }
+}
+ 
+ 
+הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output
+ Clear 
+=== Code Execution Successful ===
+1
+2
+3
+not a palindrome
+=== Code Execution Successful ===
+ 
+ 
+הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

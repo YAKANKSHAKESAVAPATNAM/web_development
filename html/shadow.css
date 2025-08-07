@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(14, 13, 13);
+}
+.first{
+    position: relative;
+    top:150px;
+    width:300px;
+    height:350px;
+    /* box-shadow: 0px 0px 25px 25px yellow;
+    background-color: rgb(224, 224, 10);
+    border-radius:50%; */
+    font-size: 60px;
+    color:rgb(28, 83, 20);
+    text-shadow:10px 10px 100px rgb(205, 233, 27);
+}

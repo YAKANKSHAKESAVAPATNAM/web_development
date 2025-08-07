@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>actions</title>
+        <link rel="stylesheet" href="actiontriggers.css">
+        <script>
+            function fun(){
+                console.log("Button clicked");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="parent" onclick="fun()">
+            <div class="child"></div>
+        </div>
+        <input type="text" placeholder="clickme" onkeyup="fun()">
+        <button ondblclick="fun()">Click Me</button>
+        <button onmouseover="fun()">Hover Me</button>
+        <button onmouseout="fun()">Mouse Out</button>
+        <button onmouseenter="fun()">Mouse Enter</button>
+        <button onmouseleave="fun()">Mouse Leave</button>
+        <button onmousedown="fun()">Mouse Down</button>
+        <button onmouseup="fun()">Mouse Up</button>
+        <button onkeyup="fun()">Key Up</button>
+        <button onkeydown="fun()">Key Down</button>
+
+    </body>
+</html>

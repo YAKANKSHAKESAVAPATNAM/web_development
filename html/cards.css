@@ -1,0 +1,32 @@
+.parent-card{
+    width:500px;
+    height:700px;
+    display:flex;
+    flex-wrap:wrap;
+    border:1px solid black;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;;
+}
+.image-section{
+    width: 100%;
+    height: 60%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-section img{
+    max-width: 100%;
+    max-height: 100PX;
+    border-radius: 8px 8px 0 0;
+}

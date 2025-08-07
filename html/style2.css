@@ -1,0 +1,220 @@
+
+   body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    color: #2d3436;
+    background: linear-gradient(120deg, #f6d365, #fda085, #fbc2eb, #cfc1f0, #fad0c4);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    /* Remove background, padding, border-radius, box-shadow from here */
+    padding-left: 80px; /* Still needed for the line and dots offset */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px; /* Keep top position */
+    width: 4px;
+    height: calc(100% - 10px); /* Adjust height to not extend past the last entry's dot */
+    background-color: #dfe6e9;
+    transform: translateX(-80px); /* move line fully outside */
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 3rem; /* Add space between boxes */
+    padding: 20px 30px; /* Add padding inside each box */
+    background: #f7f5ff; /* White background for each box */
+    border-radius: 10px; /* Rounded corners for each box */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1); /* Shadow for each box */
+    padding-left: 50px; /* Space between dot and text within the box */
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -175px; /* Adjust this to align with the line, may need fine-tuning */
+    top: 30px; /* Adjust top position to align with the content within the new padding */
+    width: 30px;
+    height: 30px;
+    background: #74b9ff;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 2px #b2bec3;
+}
+
+h3 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+    color: #1a3e5a;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.top-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.img-content {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.right-section {
+    flex: 2;
+    min-width: 300px;
+}
+
+.map-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.map-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a3e5a;
+    margin-bottom: 8px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 460px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    border-left: 4px solid #a3c9f1;
+    padding-left: 15px;
+}
+
+.quote h4 {
+    margin: 0;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.quote p {
+    margin: 6px 0 0 0;
+    font-size: 15px;
+}
+
+.highlights {
+    margin-top: 10px;
+    position: relative;
+    top: -20px; /* This might need adjustment if you want it aligned with the top of the box */
+}
+
+.highlights h4 {
+    margin-bottom: 8px;
+    color: #1a3e5a;
+}
+
+.highlights ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.gallery {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.fun-fact {
+    background: #fff9db;
+    padding: 15px 18px;
+    border-left: 5px solid #f7c842;
+    border-radius: 6px;
+    color: #5a4d00;
+}
+
+@media (max-width: 700px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-content {
+        max-width: 90vw;
+    }
+
+    .right-section {
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    /* Adjustments for small screens */
+    .timeline {
+        padding-left: 0; /* Remove left padding on small screens if you want the line to be inside */
+    }
+
+    .timeline::before {
+        left: 20px; /* Position line inside the body for small screens */
+        transform: translateX(0); /* Remove the transform */
+    }
+
+    .timeline-entry {
+        padding-left: 20px; /* Adjust padding for small screens */
+    }
+
+    .timeline-entry::before {
+        left: 20px; /* Align dot with line for small screens */
+        transform: translateX(-50%); /* Center dot on the line */
+    }
+}
+
+

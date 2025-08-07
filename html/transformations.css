@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+
+
+}
+.demo{
+    width:100px;
+    height:100px;
+    background: linear-gradient( rgb(221, 64, 64), rgb(188, 210, 116));
+    transform: scale(50%);
+
+}

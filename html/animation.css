@@ -1,0 +1,63 @@
+    .black{
+    width:100px;
+    height:100px;
+    background-color: black;
+    animation-name: myanimation;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+}
+.white{
+    width:100px;
+    height:100px;
+    background-color: rgb(190, 20, 105);
+    animation-name: myanimation;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-direction: alternate;
+   
+}
+.red{
+    width:100px;
+    height:100px;
+    background-color: rgb(149, 223, 21);
+    animation-name: myanimation;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myanimation{
+    /* from{
+        background-color: black;
+        left:0px;
+        border-radius: 0px;
+    }
+    to{
+        background-color: red;
+        left:200px;
+        border-radius: 50%;
+    } */
+     0%{
+        left:0px;
+        /* background-color: black; */
+      }
+     /*20%{
+        left:100px;
+        background-color: red;
+     }
+     60%{
+        background-color: green;
+     } */
+        100%{
+            left:300px;
+            /* background-color: blue; */
+        }
+}
